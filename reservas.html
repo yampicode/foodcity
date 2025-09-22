@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+  <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="description" content="Reservaciones en Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición">
+  <meta name="keywords" content="Reserva, Reservaciones, pay, restaurante, comida venezolana, Puerto Cabello, arepas, pabellón, jojoto, patacones">
+  <meta name="author" content="Yampiero Mujica">
+  <meta name="robots" content="index, follow">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Reservaciones en Jojoto Restaurant - Restaurante en Puerto Cabello">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <link rel="apple-touch-icon" href="/restaurante.png" sizes="180x180">
+  <link rel="apple-touch-startup-image" href="https://foodcity.vercel.app/restaurante.png">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foodcity.vercel.app">
+  <meta property="og:title" content="Reservaciones en Jojoto Restaurant - Restaurante en Puerto Cabello">
+  <meta property="og:description" content="Reservaciones en Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición.">
+  <meta property="og:image" content="https://foodcity.vercel.app/restaurante.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reservaciones en Jojoto Restaurant - Restaurante en Puerto Cabello.">
+  <meta name="twitter:description" content="Reservaciones en Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición.">
+  <meta name="twitter:image" content="https://foodcity.vercel.app/restaurante.png">
+
+  <meta name="title" content="Reservaciones en Jojoto Restaurant - Restaurante en Puerto Cabello.">
+  <title>Reservas - Restaurante Jojoto</title>
+  <link rel="stylesheet" href="w3css.min.css">
+  <link rel="stylesheet" href="reservas.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script defer src="reservas.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌽</span>
+        
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+      <nav id="main-nav">
+        <button class="close-menu" aria-label="Cerrar menú">×</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+           <li><a href="preguntas-frecuentes.html">FAQ</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Reserva tu Mesa</h1>
+
+    <div class="reservation-grid">
+      <div class="reservation-info w3-card-4">
+        <h3>Información de Reservas</h3>
+        <div class="reservation-details">
+          <p>
+            <span class="reservation-icon"><i class="fas fa-clock"></i></span> Lunes a Jueves: 11:00 AM - 10:00 PM
+          </p>
+          <p>
+            <span class="reservation-icon"><i class="fas fa-clock"></i></span> Viernes y Sábado: 11:00 AM - 11:00 PM
+          </p>
+          <p>
+            <span class="reservation-icon"><i class="fas fa-clock"></i></span> Domingo: 11:00 AM - 9:00 PM
+          </p>
+          <p>
+            <span class="reservation-icon"><i class="fas fa-users"></i></span> Capacidad máxima por mesa: 8 personas
+          </p>
+          <p>
+            <span class="reservation-icon"><i class="fas fa-calendar-alt"></i></span> Reservas con 24 horas de anticipación
+          </p>
+          <p>
+            <span class="reservation-icon"><i class="fas fa-phone"></i></span> También puedes llamarnos: (0242) 123-4567
+          </p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <h3>Eventos Especiales</h3>
+          <p>
+            ¿Planificas una celebración especial? Contáctanos para organizar eventos privados, cumpleaños o reuniones empresariales.
+          </p>
+        </div>
+      </div>
+
+      <div class="reservation-form w3-card-4">
+        <h3>Solicitud de Reserva</h3>
+        <form id="reservationForm">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" required class="w3-input">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required class="w3-input">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono de contacto</label>
+            <input type="tel" id="phone" name="phone" required class="w3-input">
+          </div>
+
+          <div class="form-group">
+            <label for="date">Fecha de reserva</label>
+            <input type="date" id="date" name="date" required class="w3-input" min="<?php echo date('Y-m-d'); ?>">
+          </div>
+
+          <div class="form-group">
+            <label for="time">Hora de reserva</label>
+            <input type="time" id="time" name="time" required class="w3-input" min="11:00" max="22:00">
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Número de personas</label>
+            <select id="guests" name="guests" required class="w3-input">
+              <option value="">Selecciona cantidad</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas</option>
+              <option value="7">7 personas</option>
+              <option value="8">8 personas</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Notas adicionales (opcional)</label>
+            <textarea id="notes" name="notes" class="w3-input" placeholder="Alergias alimentarias, requerimientos especiales, celebración especial, etc."></textarea>
+          </div>
+
+          <button type="button" class="btn" onclick="enviarReserva()">Solicitar Reserva</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2025 Restaurante Jojoto. Todos los derechos reservados.
+      </p>
+      <p class="developer">
+        Desarrollado por Yampiero Mujica - WEBZONA
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

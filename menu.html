@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Menú - Restaurante Jojoto</title>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="description" content="Menú del Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición">
+  <meta name="keywords" content="Menú, Carrito de compras, pay, restaurante, comida venezolana, Puerto Cabello, arepas, pabellón, jojoto, patacones">
+  <meta name="author" content="Yampiero Mujica">
+  <meta name="robots" content="index, follow">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Menú de Jojoto Restaurant - Restaurante en Puerto Cabello">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <link rel="apple-touch-icon" href="/restaurante.png" sizes="180x180">
+  <link rel="apple-touch-startup-image" href="https://foodcity.vercel.app/restaurante.png">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foodcity.vercel.app">
+  <meta property="og:title" content="Menú de Jojoto Restaurant - Restaurante en Puerto Cabello">
+  <meta property="og:description" content="Menú del Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición.">
+  <meta property="og:image" content="https://foodcity.vercel.app/restaurante.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menú de Jojoto Restaurant - Restaurante en Puerto Cabello.">
+  <meta name="twitter:description" content="Menú del Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición.">
+  <meta name="twitter:image" content="https://foodcity.vercel.app/restaurante.png">
+
+  <meta name="title" content="Menú de Jojoto Restaurant - Restaurante en Puerto Cabello.">
+    
+    <link rel="stylesheet" href="w3css.min.css">
+    <link rel="stylesheet" href="menu.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script defer src="menu.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌽</span>
+                
+            </a>
+            
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            
+            <nav id="main-nav">
+                <button class="close-menu" aria-label="Cerrar menú">×</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="preguntas-frecuentes.html">FAQ</a></li> 
+                    <li><a href="carrito.html" id="cart-link">Carrito (<span id="header-cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="floating-cart" onclick="redirectToCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <main class="container" style="padding-top: 2rem;">
+        <h1 class="section-title">Nuestro Menú</h1>
+        
+        <div class="menu-category">
+            <h2>Arepas y Empanadas</h2>
+            <div class="menu-items">
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1618843479313-40f8afd4b8ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Arepa de Pabellón</h3>
+                        <p class="menu-item-desc">Arepa rellena con carne mechada, caraotas negras, arroz y plátano maduro.</p>
+                        <p class="menu-item-price">$8.99</p>
+                        <button class="btn" onclick="addToCart('Arepa de Pabellón', 8.99, '🌽')">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1626700051175-681c3c30644a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Arepa Reina Pepiada</h3>
+                        <p class="menu-item-desc">Arepa rellena con pollo, aguacate y mayonesa casera.</p>
+                        <p class="menu-item-price">$7.50</p>
+                        <button class="btn" onclick="addToCart('Arepa Reina Pepiada', 7.50, '🌽')">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1618843479313-40f8afd4b8ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Empanadas de Cazón</h3>
+                        <p class="menu-item-desc">Empanadas fritas rellenas de cazón guisado y queso.</p>
+                        <p class="menu-item-price">$9.25</p>
+                        <button class="btn" onclick="addToCart('Empanadas de Cazón', 9.25, '🌯')">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h2>Platos Principales</h2>
+            <div class="menu-items">
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Pabellón Criollo</h3>
+                        <p class="menu-item-desc">Plato tradicional venezolano: carne mechada, caraotas, arroz y plátano.</p>
+                        <p class="menu-item-price">$12.99</p>
+                        <button class="btn" onclick="addToCart('Pabellón Criollo', 12.99, '🍛')">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1559847844-35c16bf4e2e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Asado Negro</h3>
+                        <p class="menu-item-desc">Carne de res asada con salsa negra, acompañada de arroz y papas.</p>
+                        <p class="menu-item-price">$14.50</p>
+                        <button class="btn" onclick="addToCart('Asado Negro', 14.50, '🍖')">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Pescado Frito</h3>
+                        <p class="menu-item-desc">Pescado entero frito acompañado de tostones y ensalada.</p>
+                        <p class="menu-item-price">$16.75</p>
+                        <button class="btn" onclick="addToCart('Pescado Frito', 16.75, '🐟')">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h2>Bebidas</h2>
+            <div class="menu-items">
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Chicha</h3>
+                        <p class="menu-item-desc">Bebida tradicional a base de arroz y leche condensada.</p>
+                        <p class="menu-item-price">$3.50</p>
+                        <button class="btn" onclick="addToCart('Chicha', 3.50, '🥤')">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1622484202384-72a77d47e56e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Papelón con Limón</h3>
+                        <p class="menu-item-desc">Refresco de papelón (panela) con limón natural.</p>
+                        <p class="menu-item-price">$2.99</p>
+                        <button class="btn" onclick="addToCart('Papelón con Limón', 2.99, '🍹')">Añadir al carrito</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item w3-card-4">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="menu-item-info">
+                        <h3>Cerveza Artesanal</h3>
+                        <p class="menu-item-desc">Selección de cervezas artesanales locales.</p>
+                        <p class="menu-item-price">$4.99</p>
+                        <button class="btn" onclick="addToCart('Cerveza Artesanal', 4.99, '🍺')">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Restaurante Jojoto. Todos los derechos reservados.</p>
+            <p class="developer">Desarrollado por Yampiero Mujica - WEBZONA</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="description" content="Preguntas Frecuentes sobre Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición">
+  <meta name="keywords" content="Preguntas Frecuentes, FAQ,  restaurante, comida venezolana, Puerto Cabello, arepas, pabellón, jojoto, patacones">
+  <meta name="author" content="Yampiero Mujica">
+  <meta name="robots" content="index, follow">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Preguntas Frecuentes sobre Jojoto Restaurant - Restaurante en Puerto Cabello">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <link rel="apple-touch-icon" href="/restaurante.png" sizes="180x180">
+  <link rel="apple-touch-startup-image" href="https://foodcity.vercel.app/restaurante.png">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foodcity.vercel.app">
+  <meta property="og:title" content="Preguntas Frecuentes sobre Jojoto Restaurant - Restaurante en Puerto Cabello">
+  <meta property="og:description" content="Preguntas Frecuentes sobre Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición.">
+  <meta property="og:image" content="https://foodcity.vercel.app/restaurante.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Preguntas Frecuentes sobre Jojoto Restaurant - Restaurante en Puerto Cabello.">
+  <meta name="twitter:description" content="Preguntas Frecuentes sobre Restaurante Jojoto en Puerto Cabello - Auténtica comida venezolana con sabor a tradición.">
+  <meta name="twitter:image" content="https://foodcity.vercel.app/restaurante.png">
+
+  <meta name="title" content="Preguntas Frecuentes sobre Jojoto Restaurant - Restaurante en Puerto Cabello.">
+  
+    <title>Preguntas Frecuentes - Restaurante Jojoto</title>
+    
+    <link rel="stylesheet" href="w3css.min.css">
+    <link rel="stylesheet" href="preguntas-frecuentes.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="preguntas-frecuentes.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌽</span>
+                
+            </a>
+            
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            
+            <nav id="main-nav">
+                <button class="close-menu" aria-label="Cerrar menú">×</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    
+                    <li><a href="preguntas-frecuentes.html">FAQ</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="w3-container">
+            <h1 class="section-title w3-text-brown">Preguntas Frecuentes</h1>
+            <p class="w3-center w3-large w3-text-grey">Encuentra respuestas a las dudas más comunes sobre nuestro restaurante</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Buscar en preguntas frecuentes..." id="faq-search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-category">
+                    <h2 class="w3-text-brown w3-padding-16"><i class="fas fa-utensils w3-margin-right"></i> Sobre nuestro Menú</h2>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(0)">
+                            <span>¿Tienen opciones vegetarianas o veganas en el menú?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, contamos con varias opciones vegetarianas y veganas. Nuestras arepas pueden prepararse con rellenos vegetales como:
+                            <ul class="w3-ul">
+                                <li>Arepa de vegetales salteados</li>
+                                <li>Arepa de aguacate y queso (opción vegetariana)</li>
+                                <li>Arepa de caraotas negras (vegana)</li>
+                                <li>Ensalada tropical con frutos secos</li>
+                            </ul>
+                            No dudes en preguntar a nuestro personal sobre las opciones disponibles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(1)">
+                            <span>¿Los platos contienen ingredientes alergénicos comunes?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Algunos de nuestros platos pueden contener alérgenos como gluten, lactosa, frutos secos o mariscos. 
+                            Contamos con un menú detallado que especifica los ingredientes de cada plato. Si tienes alguna alergia 
+                            alimentaria, por favor infórmanos al hacer tu pedido y nuestro personal te asistirá en seleccionar 
+                            opciones seguras para ti.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(2)">
+                            <span>¿Puedo personalizar mi pedido?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>¡Absolutamente! Nos encanta que nuestros clientes personalicen sus platos según sus preferencias. 
+                            Puedes solicitar modificaciones como:
+                            <ul class="w3-ul">
+                                <li>Ajustar el nivel de picante</li>
+                                <li>Cambiar guarniciones</li>
+                                <li>Excluir ingredientes que no te gusten</li>
+                                <li>Agregar extras por un costo adicional</li>
+                            </ul>
+                            Nuestro equipo de cocina hará todo lo posible para acomodar tus preferencias.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h2 class="w3-text-brown w3-padding-16"><i class="fas fa-truck w3-margin-right"></i> Delivery y Takeaway</h2>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(3)">
+                            <span>¿Hacen delivery a domicilio?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos servicio de delivery en Puerto Cabello y zonas aledañas. 
+                            <ul class="w3-ul">
+                                <li>Radio de entrega: hasta 5km desde nuestro local</li>
+                                <li>Costo de envío: $2 (gratis para pedidos superiores a $15)</li>
+                                <li>Tiempo estimado: 30-45 minutos</li>
+                            </ul>
+                            Puedes hacer tu pedido a través de nuestro WhatsApp, llamando al restaurante o mediante nuestra página web.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(4)">
+                            <span>¿Cómo funciona el servicio de takeaway?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nuestro servicio de takeaway es simple y conveniente:
+                            <ol class="w3-ol">
+                                <li>Realiza tu pedido por teléfono, WhatsApp o web</li>
+                                <li>Te indicaremos el tiempo estimado de preparación</li>
+                                <li>Recoge tu pedido en nuestro mostrador de takeaway</li>
+                                <li>Paga al recoger (efectivo, tarjeta o transferencia)</li>
+                            </ol>
+                            Ofrecemos un 10% de descuento en pedidos para llevar los martes y miércoles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(5)">
+                            <span>¿Los precios son iguales para delivery y en restaurante?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Los precios del menú son los mismos tanto para consumo en el restaurante como para takeaway. 
+                            Para delivery, aplicamos un pequeño cargo de envío de $2, que es gratuito en pedidos superiores a $15. 
+                            Todos los pedidos de delivery se empaquetan cuidadosamente para mantener la temperatura y calidad de los alimentos durante el transporte.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h2 class="w3-text-brown w3-padding-16"><i class="fas fa-calendar-alt w3-margin-right"></i> Reservas y Eventos</h2>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(6)">
+                            <span>¿Necesito reservar con anticipación?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Recomendamos hacer reservaciones, especialmente para:
+                            <ul class="w3-ul">
+                                <li>Viernes y sábados por la noche</li>
+                                <li>Grupos de 6 o más personas</li>
+                                <li>Celebraciones especiales (cumpleaños, aniversarios)</li>
+                            </ul>
+                            Para grupos pequeños en días entre semana, generalmente tenemos disponibilidad sin reserva previa. 
+                            Puedes reservar a través de nuestro sitio web, por WhatsApp o llamando al restaurante.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(7)">
+                            <span>¿Organizan eventos privados?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, organizamos eventos privados y celebraciones especiales. Ofrecemos:
+                            <ul class="w3-ul">
+                                <li>Espacio para hasta 40 personas</li>
+                                <li>Menús personalizados para eventos</li>
+                                <li>Decoración temática opcional</li>
+                                <li>Servicio de catering externo para eventos grandes</li>
+                            </ul>
+                            Contáctanos con al menos 2 semanas de anticipación para planificar tu evento y te prepararemos una propuesta personalizada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(8)">
+                            <span>¿Tienen opciones para celebraciones?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>¡Claro que sí! Para celebraciones ofrecemos:
+                            <div class="w3-row-padding">
+                                <div class="w3-half">
+                                    <ul class="w3-ul">
+                                        <li>Torta personalizada (con 48h de anticipación)</li>
+                                        <li>Decoración especial de la mesa</li>
+                                        <li>Botella de espumante cortesía para cumpleaños</li>
+                                    </ul>
+                                </div>
+                                <div class="w3-half">
+                                    <ul class="w3-ul">
+                                        <li>Menú degustación para grupos</li>
+                                        <li>Espacio reservado para grupos grandes</li>
+                                        <li>Fotógrafo profesional (servicio adicional)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            Avísanos al hacer tu reserva que es una celebración especial para que podamos preparar una sorpresa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h2 class="w3-text-brown w3-padding-16"><i class="fas fa-credit-card w3-margin-right"></i> Pagos y Promociones</h2>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(9)">
+                            <span>¿Qué métodos de pago aceptan?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Aceptamos los siguientes métodos de pago:
+                            <div class="w3-row-padding">
+                                <div class="w3-half">
+                                    <ul class="w3-ul">
+                                        <li><i class="fas fa-money-bill-wave w3-text-green"></i> Efectivo (USD y VES)</li>
+                                        <li><i class="fas fa-credit-card w3-text-blue"></i> Tarjetas de débito y crédito</li>
+                                        <li><i class="fas fa-mobile-alt w3-text-purple"></i> Transferencias móviles</li>
+                                    </ul>
+                                </div>
+                                <div class="w3-half">
+                                    <ul class="w3-ul">
+                                        <li><i class="fab fa-paypal w3-text-blue"></i> PayPal</li>
+                                        <li><i class="fas fa-exchange-alt w3-text-orange"></i> Transferencias bancarias</li>
+                                        <li><i class="fas fa-wallet w3-text-teal"></i> Zelle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            Para pedidos de delivery, puedes pagar en efectivo al recibir o por transferencia anticipada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(10)">
+                            <span>¿Ofrecen descuentos o promociones especiales?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, regularly tenemos promociones especiales:
+                            <ul class="w3-ul">
+                                <li><strong>Martes de Arepas:</strong> 2x1 en arepas rellenas</li>
+                                <li><strong>Jueves de Pabellón:</strong> 15% de descuento en nuestro plato bandera</li>
+                                <li><strong>Happy Hour:</strong> De 4pm a 6pm, 20% de descuento en bebidas</li>
+                                <li><strong>Cumpleañeros:</strong> 20% de descuento presentando identificación</li>
+                            </ul>
+                            Síguenos en redes sociales para mantenerte al día con nuestras promociones y eventos especiales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item w3-card-4">
+                        <div class="faq-question" onclick="toggleFaq(11)">
+                            <span>¿Tienen un programa de fidelidad?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, contamos con el programa "Club Jojoto" de fidelidad:
+                            <ul class="w3-ul">
+                                <li>Acumulas 1 punto por cada $1 gastado</li>
+                                <li>100 puntos = $5 de descuento en tu próxima visita</li>
+                                <li>Descuento especial en tu cumpleaños</li>
+                                <li>Acceso anticipado a nuevos platos y promociones</li>
+                            </ul>
+                            Puedes unirte al programa descargando nuestra app o solicitando una tarjeta física en el restaurante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-promo w3-card-4">
+                <h2 class="w3-xxlarge">¿No encontraste tu pregunta?</h2>
+                <p class="w3-large">Estamos aquí para ayudarte. Contáctanos directamente</p>
+                <div class="w3-margin-top botones">
+                    <a href="contacto.html" class="w3-button w3-round-large w3-white w3-text-brown w3-hover-brown w3-hover-text-white" style="padding: 12px 20px; font-weight: bold;">Contáctanos</a>
+                    <a href="https://wa.me/584120348988" class="w3-button w3-round-large w3-white w3-text-brown w3-hover-brown w3-hover-text-white" style="padding: 12px 20px; font-weight: bold;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Restaurante Jojoto. Todos los derechos reservados.</p>
+            <p class="developer">Desarrollado por Yampiero Mujica - WEBZONA</p>
+        </div>
+    </footer>
+
+</body>
+</html>
